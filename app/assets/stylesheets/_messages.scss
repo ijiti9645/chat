@@ -2,3 +2,24 @@
   box-sizing: border-box;
 }
 
+.wrapper{
+  height: 100%;
+  width: 100%;
+
+  .chat-side{
+    width: 300px;
+    color: white;
+    float: left;
+    height: 100%;
+    background-color: #253141;
+    height: calc(100vh);
+  }
+
+  .chat-main{
+    width: calc(100vw - 300px);
+    float: left;
+    background-color: #fff;
+    height: calc(100vh);
+  }
+
+}
