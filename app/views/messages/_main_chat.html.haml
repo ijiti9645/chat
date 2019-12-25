@@ -20,3 +20,10 @@
       %p.message__text
         コメント
   .form
+    = form_for "#" ,html: { class: 'new_message', id: 'new_message' } do |f|
+      .input-box
+        = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
+        = f.label :image, class: 'input-box__image' do
+          %i.fa.fa-image
+          = f.file_field :image, class: 'input-box__image__file'
+      = f.submit 'Send', class: 'submit-btn'
